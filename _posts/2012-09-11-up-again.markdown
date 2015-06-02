@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Up Again"
+date: 2012-09-11 11:45
+comments: true
+categories: Blag
+---
+
+Another day, another blag. Finally got around to re-launching it—which I've been thinking about for a while now—this time using [Octopress](http://octopress.org/).
+
+Since last time, which was a really long time ago, I've finished school with a bachelor degree in Computer Science, gotten [a real job](http://www.atlantia.no/) and moved from Norway to Sweden. And gotten engaged.
+
+Still using a Mac. Still having a ton of projects that are more or less abandonware.
+
+Hoping I might find some interesting things to share every now and then, and that I don't abandon this blag (yet again) too soon.

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "OCR"
+date: 2008-09-07
+categories: [Project, OCR]
+---
+
+["Not Invented Here"](http://en.wikipedia.org/wiki/Not_Invented_Here) is a way of life for most of my projects. Most, if not all, could easily be solved by finding some already existing product, and, if necessary, tweaking it. Instead, I choose to create my own solution. Which usually ends up buggy, unmaintained, and I lose interest before moving on.
+
+This time, I was thinking about my semi-working DVD ripper currently without a name. It was going to help me rip all my DVDs into H.264, to be stored on the fileserver, where I could access them all instantly. And then my interest died...
+
+My previous version was pretty much complete. Only thing missing was a way to convert subtitles from VobSubs to a normal, sane format without having to start a Windows-box and run [SubRip](http://membres.lycos.fr/subrip/). Had a look around again, and found [gpgm2srt](http://old.e-hanus.cz/linux/gpgm2srt_en.htm). Downloaded and tested it, and it actually works.
+
+But of course, it's not perfect. And that's why I've taken it upon myself to improve it. First, I'm planning on translating the entire thing to Ruby. Then, stuff it into my own project [ruby-subtitles](http://github.com/PerfectlyNormal/ruby-subtitles/), rip out the GUI and replace it with [Qt](http://trolltech.no/products/qt/). When that is done, I'll most likely be sick of it, and not do any more, but the plan was to then improve things a bit, and then finish up my ripper, making them work together for great justice.

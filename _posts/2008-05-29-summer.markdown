@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Summer"
+date: 2008-05-29
+categories:
+---
+
+Finished my last exam yesterday (only had two). But that means that it's finally vacation. Don't have a job, and haven't been looking for one, which means that until the end of August, I'm free to do whatever I feel like.
+
+I have lots of plans for things to do, mainly projects I've been delaying and delaying. First, [we](http://eastblue.org/rye/) will finish the last revisions, and start on the special. That is something we've been delaying far too long now. The people are waiting! (At least someone is.)
+
+Then I need to upgrade my router, `angband`, to OpenBSD 4.3 and replace a half-working network card that'll probably boost the performance for the poor WLAN-users in this house. Thinking about maybe using it as a WLAN access point as well, so that I can finally get rid of that shitty WLAN-thingy we use now.
+
+Was planning to move from qmail to Postfix as well, but instead, I moved it over to Google Apps. Less work for me, and everything works great. POP and IMAP available, and I trust Google to keep things working and up a bit more than myself. So now I can actually use my mail for more serious things.
