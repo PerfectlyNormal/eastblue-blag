@@ -43,4 +43,4 @@ As you can see, all it does is pulling down the changes, running jekyll, and rsy
 
 With the `GIT_DIR`-trick figured out, the rest was just creating the layout and starting to write the content. I'm now typing in the excellent TextMate, which easily defeats any web-UI for a blag I've ever tried. And having everything included in my dev-server-backup is also very nice.
 
-Figured I should try adding some commenting, and hopefully also making it possible to use the tags for anything later on, but I think this might be enough for one day. Should export my previous entries from TextPattern as well, which <del>shouldn't be too hard</del> [isn't hard]({% post_url /blag/2009-01-09-exporting-textpattern %}).
+Figured I should try adding some commenting, and hopefully also making it possible to use the tags for anything later on, but I think this might be enough for one day. Should export my previous entries from TextPattern as well, which <del>shouldn't be too hard</del> [isn't hard](/blag{% post_url 2009-01-09-exporting-textpattern %}).

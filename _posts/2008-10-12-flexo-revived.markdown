@@ -5,7 +5,7 @@ date: 2008-10-12
 categories: [Project, Flexo]
 ---
 
-This is a continuation of the story of [Flexo]({% post_url /blag/2008-04-01-introducing-flexo %}).
+This is a continuation of the story of [Flexo](/blag{% post_url 2008-04-01-introducing-flexo %}).
 
 Shortly after writing the last post, I lost interest, and abandoned work on Flexo. I have now revived it, and also published it on [GitHub](http://github.com/), as all cool Ruby-developers do. (this one can be found under [PerfectlyNormal/Flexo](http://github.com/PerfectlyNormal/flexo).)
 

@@ -10,7 +10,7 @@ I'm hard at work on [iEye](https://ieye.org) these days.
 
 To take care of images, we use [Paperclip](http://thoughtbot.com/projects/paperclip/), and are loving it. But according to [New Relic's RPM](http://www.newrelic.com/), the slowest part is when we upload a image, and it creates a few different versions (not that it was any surprise that that was slow). I searched a bit around for a easy way to make Paperclip work with [delayed\_job](http://tobi.github.com/delayed_job), but soon concluded that I would have to do it myself. Which I did.
 
-#### ImageJob
+## ImageJob
 
 The first step was to create a small wrapper-class for my model. I'm attaching images to a `Image`-model, so this new class was called `ImageJob` (and lives in `lib/`, since it's not really a model).
 
@@ -26,7 +26,7 @@ end
 
 I tried to just enqueue the `Image` itself, but that gave me some errors when de-serializing the object from the database. And we don't really need to store the entire model in the database when we can just fetch it when we need it.
 
-#### Processing
+## Processing
 
 Then I added a column to the images-table, letting me know if it was still processing the image.
 
@@ -44,7 +44,7 @@ end
 
 It defaults to `true`, since Rails refused to set it to `true` before Paperclip started doing its thing. Might have been solved with some more investigation, but this worked quickly. This means that for an existing site, you would have to create a job for each existing image, and let them be processed, or go change each existing image to be done.
 
-#### Stopping Paperclip
+## Stopping Paperclip
 
 Then it was time to change the `Image` creation process, so we halted Paperclip if it was just created.
 
@@ -60,7 +60,7 @@ after_create do |image|
 end
 {% endhighlight %}
 
-#### Performing the resizing
+## Performing the resizing
 
 {% highlight ruby %}
 # Force Paperclip to reprocess the image, and
@@ -73,7 +73,7 @@ def perform
 end
 {% endhighlight %}
 
-#### Default images when processing
+## Default images when processing
 
 Since Paperclip doesn't really know (or care) that we stopped it from creating images, it still returns the URLs for images that don't exist. And we don't want to serve non-existing images to visitors.
 
@@ -93,7 +93,7 @@ end
 
 The default URL we use is stored as `@@default_url = "/system/:class/missing/:style.:locale.png"`, and gives URLs like `/system/images/missing/pending_thumbnail.en.png` when we are waiting for the thumbnail.
 
-#### Running the worker
+## Running the worker
 
 To actually get the workers running, and the jobs done, I use [God](http://github.com/mojombo/god) to make sure it keeps running, and a configuration based on [what GitHub uses](http://github.com/blog/229-dj-god)
 

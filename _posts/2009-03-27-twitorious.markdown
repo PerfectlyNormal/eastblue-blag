@@ -5,7 +5,7 @@ date: 2009-03-27
 categories: [Project]
 ---
 
-The last few days, in between work on [iEye](http://myieye.net) and school, I've extended my Twitter-script and made it into a full-fledged project. Named Twitorious. Which is slightly misleading, since that might suggest it only works on [Twitter](http://twitter.com), which is wrong.
+The last few days, in between work on [iEye](https://ieye.org) and school, I've extended my Twitter-script and made it into a full-fledged project. Named Twitorious. Which is slightly misleading, since that might suggest it only works on [Twitter](http://twitter.com), which is wrong.
 
 It currently supports all microblogging-sites with a Twitter-compatible API, or at least it should, in theory. I've only tested it on Twitter and [Identi.ca](http://identi.ca).
 

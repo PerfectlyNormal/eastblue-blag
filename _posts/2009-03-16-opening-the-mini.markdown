@@ -5,7 +5,7 @@ date: 2009-03-16
 categories: [Computers]
 ---
 
-Today I sat down with my two new, shiny 2GB sticks of DDR3-RAM, so I could live with my [Mini](/2009/moving-away-from-linux), since 1GB is, as it turns out, far too little. I knew it was a bit tiny, but not exactly how much I would miss those gigabytes.
+Today I sat down with my two new, shiny 2GB sticks of DDR3-RAM, so I could live with my [Mini](/blag/2009/moving-away-from-linux), since 1GB is, as it turns out, far too little. I knew it was a bit tiny, but not exactly how much I would miss those gigabytes.
 
 All the guides I've found have recommended to use a putty knife, but I was unable to find one anywhere in the house. Looked at a few pictures, and realized that it should work fine with a regular butter knife we use. And it did. There's a few scratch-marks below, but they're not really visible.
 Opening the Mac was a bitch, and so was getting the lid attached again. But the rest of it went pretty smooth.

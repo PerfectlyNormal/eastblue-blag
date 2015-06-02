@@ -15,7 +15,7 @@ I don't really host any web pages any longer, the only things are taken care of 
 
 I've already ended up with a MySQL instance on `maeglin`, so I can just move all the databases over there.
 
-And as mentioned in "[Summer](/2008/summer)", I've moved over to Google Apps for my email.
+And as mentioned in "[Summer](/blag{% post_url 2008-05-29-summer %})", I've moved over to Google Apps for my email.
 
 Which only leaves IRC. And frankly, that's not worth a dedicated machine.
 
