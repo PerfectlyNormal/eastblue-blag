@@ -239,4 +239,11 @@
             font-size: 18px;
         }
     }
+
+    .divider {
+      border: none;
+      border-top: 1px solid $grey-color-light;
+      margin: $spacing-unit auto;
+      width: 70%;
+    }
 }
