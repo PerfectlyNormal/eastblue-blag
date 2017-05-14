@@ -160,6 +160,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    position: relative;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -201,4 +202,65 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+/**
+ * GoodReads
+ */
+article.post-content.with-goodreads {
+  width: 80%;
+}
+
+#gr_custom_widget_1494711042 {
+  margin-left: 30px;
+  width: 20%;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  #gr_spinner {
+    text-align: center;
+  }
+
+  .gr_custom_container_1494711042 {
+    border-left: 1px solid #e8e8e8;
+    padding: 0px 5px 10px 5px;
+    background-color: transparent;
+    max-width: 150px;
+    height: 100%;
+  }
+  .gr_custom_header_1494711042 {
+    border-bottom: 1px solid #e8e8e8;
+    width: 80%;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    font-size: 100%;
+  }
+  .gr_custom_each_container_1494711042 {
+    width: 90%;
+    margin: 0 auto 10px auto;
+    clear: both;
+    overflow: auto;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+  }
+  .gr_custom_each_container_1494711042:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .gr_custom_book_container_1494711042 {
+    overflow: hidden;
+    height: 160px;
+    margin-left: 4px;
+    width: auto;
+    text-align: center;
+  }
+  .gr_custom_author_1494711042 {
+    font-size: 10px;
+  }
 }
