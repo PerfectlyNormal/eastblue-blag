@@ -61,6 +61,8 @@ permalink: /now/
 
 Quite out of date, as is to be expected. More to come later.
 
+Turns out the GoodReads widget broke. Will have to look into that.
+
 <hr class="divider">
 
 <p class="post-meta">
