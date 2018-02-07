@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="Serve gzipped javascript" enabled="true" stopProcessing="false">
+          <match url="(.*).js$" />
+          <conditions>
+            <add input="{DOCUMENT_ROOT}/wwwroot/{R:0}.gz" matchType="IsFile" negate="false" />
+          </conditions>
+          <action type="Rewrite" url="{R:1}.js.gz" appendQueryString="true" logRewrittenUrl="true" />
+        </rule>
+        <rule name="Serve gzipped CSS" enabled="true" stopProcessing="false">
+          <match url="(.*).css$" />
+          <conditions>
+            <add input="{DOCUMENT_ROOT}/wwwroot/{R:0}.gz" matchType="IsFile" negate="false" />
+          </conditions>
+          <action type="Rewrite" url="{R:1}.css.gz" appendQueryString="true" logRewrittenUrl="true" />
+        </rule>
+      </rules>
+      <outboundRules>
+        <rule name="Rewrite gzip content encoding header" preCondition="IsGzipped" stopProcessing="false">
+          <match serverVariable="RESPONSE_CONTENT_ENCODING" pattern=".*" />
+          <action type="Rewrite" value="gzip" />
+        </rule>
+        <rule name="Rewrite gzip content type header (JS)" preCondition="IsGzippedJavaScript" stopProcessing="false">
+          <match serverVariable="RESPONSE_CONTENT_TYPE" pattern=".*" />
+          <action type="Rewrite" value="application/javascript" />
+        </rule>
+        <rule name="Rewrite gzip content type header (CSS)" preCondition="IsGzippedCSS" stopProcessing="false">
+          <match serverVariable="RESPONSE_CONTENT_TYPE" pattern=".*" />
+          <action type="Rewrite" value="text/css" />
+        </rule>
+        <preConditions>
+          <preCondition name="IsGzipped">
+            <add input="{URL}" pattern="\.gz$" />
+          </preCondition>
+          <preCondition name="IsGzippedJavaScript">
+            <add input="{URL}" pattern="\.js\.gz$" />
+          </preCondition>
+          <preCondition name="IsGzippedCSS">
+            <add input="{URL}" pattern="\.css\.gz$" />
+          </preCondition>
+        </preConditions>
+      </outboundRules>
+    </rewrite>
+    <urlCompression doStaticCompression="false" />
+  </system.webServer>
+</configuration>
