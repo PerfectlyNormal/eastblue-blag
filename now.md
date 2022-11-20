@@ -5,63 +5,30 @@ menutitle: nownownow
 permalink: /now/
 ---
 
-<div id="gr_custom_widget_1494711042">
-  <div class="gr_custom_container_1494711042">
-    <h2 class="gr_custom_header_1494711042">
-      <a style="text-decoration: none;" href="https://www.goodreads.com/review/list/2268122-per-christian?shelf=currently-reading">Reading</a>
-    </h2>
+<div id="widget">
+  <h3>
+    <a href="https://literal.club/perfectlynormal">Reading</a>
+  </h3>
 
-    <div id="gr_spinner">
-      <img src="{{ site.url }}/blag/images/spinspin.svg">
-    </div>
-  </div>
+  <div id="literal-widget" handle="perfectlynormal" status="IS_READING" layout="list"></div>
+  <script>
+    document.getElementsByClassName("post-content")[0].classList.add('with-widget');
+  </script>
+  <script src="https://literal.club/js/widget.js"></script> 
 </div>
-<script defer async type="text/javascript" charset="utf-8">
-  var dataSource = 'https://eastblue.org/~perchr/goodreads.php';
-
-  var parseHTML = function(str) {
-    var tmp = document.implementation.createHTMLDocument();
-    tmp.body.innerHTML = str;
-    return tmp.body.children;
-  };
-
-  var request = new XMLHttpRequest();
-  request.open('GET', dataSource, true);
-
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-      var data = request.responseText;
-      var doc = parseHTML(data)[0];
-
-      var books = doc.getElementsByClassName("gr_custom_each_container_1494711042");
-      var container = document.getElementsByClassName("gr_custom_container_1494711042")[0];
-      while(books.length > 0) {
-        container.appendChild(books[0]);
-      }
-      var spin = document.getElementById('gr_spinner');
-      spin.parentNode.removeChild(spin);
-      document.getElementsByClassName("post-content")[0].classList.add('with-goodreads');
-    } else {
-      var container = document.getElementById('gr_custom_widget_1494711042');
-      container.parentNode.removeChild(container);
-    }
-  };
-
-  request.onerror = function() {
-    var container = document.getElementById('gr_custom_widget_1494711042');
-    container.parentNode.removeChild(container);
-  };
-
-  request.send();
-</script>
 
 > It’s a nice reminder for myself, when I’m feeling unfocused. A public declaration of priorities.
 >
 > -- <cite>Derek Sivers</cite>
 
-Quite out of date, as is to be expected. More to come later.
+Been busy with work and life and everything, with no time for any fun side projects.
+So this is mostly dead. Hopefully that can change a bit now.
 
-Turns out the GoodReads widget broke. Will have to look into that.
+So much I want to do. So hard to focus on a single thing.
+
+~~Turns out the GoodReads widget broke. Will have to look into that.~~
+
+Replaced Goodreads with [Literal](https://literal.club)
 
 <hr class="divider">
 
