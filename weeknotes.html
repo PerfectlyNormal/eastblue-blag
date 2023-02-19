@@ -1,0 +1,28 @@
+---
+layout: page
+title: Weeknotes
+permalink: /weeknotes/
+---
+
+<div class="weeknotes">
+
+    <p>
+        Weeknotes are a weekly summary of what one has been up to.
+        I'm going to be terrible at publishing these.
+        Month-notes, more likely. If that.
+    </p>
+
+    <hr class="divider">
+
+    <ul class="post-list">
+        {% for post in site.weeknotes %}
+        <li>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <span class="post-meta">{{ post.subtitle }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

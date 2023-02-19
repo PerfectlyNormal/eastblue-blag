@@ -12,6 +12,11 @@ image_url: "/blag/images"
 github_username:  PerfectlyNormal
 permalink: /:year/:title.html
 
+collections:
+  weeknotes:
+    permalink: /:year/W:week/:title.html
+    output: true
+
 # Build settings
 markdown: kramdown
 theme: minima
