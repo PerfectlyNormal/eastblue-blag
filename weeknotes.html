@@ -15,7 +15,8 @@ permalink: /weeknotes/
     <hr class="divider">
 
     <ul class="post-list">
-        {% for post in site.weeknotes %}
+        {% assign weeknotes = site.weeknotes | reverse %}
+        {% for post in weeknotes %}
         <li>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             <span class="post-meta">{{ post.subtitle }}</span>
